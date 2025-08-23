@@ -85,7 +85,38 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {.sidebar {
+  /* Styles existants */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebar ul li.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.sidebar ul li.active .icon {
+  color: #1976d2;
+}
   .cards-container {
     grid-template-columns: 1fr;
   }

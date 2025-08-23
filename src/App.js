@@ -8,6 +8,8 @@ import BarChart from './components/BarChart';
 import PieChart from './components/PieChart';
 import DataTable from './components/DataTable';
 import React, { useState } from 'react'; // Ajoutez { useState } à l'import
+import { CiSaveDown1 } from "react-icons/ci";
+import { FcSettings , FcPortraitMode , FcComboChart} from "react-icons/fc";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -27,7 +29,7 @@ function App() {
         <div className="content">
           {/* Seul ce contenu défilera */}
           <div className="cards-container">
-            <Card title="Utilisateurs" value="1,254" icon="👥" />
+            <Card title="Utilisateurs" value="1,254" icon={<FcPortraitMode />} />
             <Card title="Revenus" value="$8,542" icon="💰" />
             <Card title="Taux de conversion" value="3.2%" icon="📈" />
             <Card title="Satisfaction" value="4.6/5" icon="⭐" />
